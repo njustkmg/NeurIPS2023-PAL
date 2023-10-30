@@ -71,7 +71,6 @@ def Compute_un(args, unlabeledloader, Len_labeled_ind_train, model, wnet, query,
         # get the predicted label of label
         batch_size = inputs.shape[0]
         v_ij, predicted = outputs.max(1)
-        # 使用ova的预测作为
         predicted = predicted
         weight = wnet(outputs_open).cpu()
         s_ID = compute_S_ID(outputs_open)
