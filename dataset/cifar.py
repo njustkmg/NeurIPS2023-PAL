@@ -15,7 +15,6 @@ __all__ = ['cifar10_mean', 'cifar10_std', 'cifar100_mean', 'cifar100_std', 'norm
 DATA_PATH = './data'
 
 
-#抽样算得
 cifar10_mean = (0.4914, 0.4822, 0.4465)
 cifar10_std = (0.2471, 0.2435, 0.2616)
 cifar100_mean = (0.5071, 0.4867, 0.4408)
