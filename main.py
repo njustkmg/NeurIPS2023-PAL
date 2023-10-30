@@ -20,7 +20,6 @@ def main():
     global best_acc_val
     sys.stdout = Logger(osp.join(args.save_dir, 'log_' + args.dataset +"_" +  str(args.miu) + '.txt'))
     print(args)
-    # print('-'*40 + 'Sup_AL_v2' + '-'*40)
     if args.local_rank == -1:
         device = torch.device('cuda', args.gpu_id)
         args.world_size = 1
