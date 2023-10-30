@@ -27,7 +27,7 @@ def set_parser():
     parser.add_argument('--root', default='./data', type=str,
                         help='path to data directory')
     parser.add_argument('--dataset', default='cifar10', type=str,
-                        choices=['cifar10', 'cifar100','Tiny_imagenet'],
+                        choices=['cifar10', 'cifar100'],
                         help='dataset name')
     parser.add_argument('--save_dir', type=str, default='log')
 
@@ -88,7 +88,7 @@ def set_parser():
     # AL relate
     parser.add_argument('--max-query', type=int, default=10)
     parser.add_argument('--query-batch', type=int, default=1500)
-    parser.add_argument('--query-strategy', type=str, default='random', choices=['PAL'])
+    parser.add_argument('--query-strategy', type=str, default='PAL', choices=['PAL'])
     parser.add_argument('--is-filter', type=bool, default=True)
     parser.add_argument('--is-mini', type=bool, default=True)
     parser.add_argument('--lr_wnet', type=float, default=6e-5)
