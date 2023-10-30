@@ -88,8 +88,7 @@ def set_parser():
     # AL relate
     parser.add_argument('--max-query', type=int, default=10)
     parser.add_argument('--query-batch', type=int, default=1500)
-    parser.add_argument('--query-strategy', type=str, default='random', choices=['random', 'uncertainty', 'AV_based'\
-        ,'AV_uncertainty', 'AV_based2', 'Max_AV', 'AV_temperature', 'ALSSL','ALCL','PAL'])
+    parser.add_argument('--query-strategy', type=str, default='random', choices=['PAL'])
     parser.add_argument('--is-filter', type=bool, default=True)
     parser.add_argument('--is-mini', type=bool, default=True)
     parser.add_argument('--lr_wnet', type=float, default=6e-5)
